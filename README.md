@@ -5,18 +5,18 @@
 Локальный запуск
 
 1. Запустите сервер:
-bash
-    cd server
-    npm install
-    npm start
+bash;
+    cd server;
+    npm install;
+    npm start;
 
 Сервер запустится на http://localhost:3000
 
 2. Запустите клиент (в новом терминале):
-bash
-    cd client
-    npm install
-    npm start
+bash;
+    cd client;
+    npm install;
+    npm start;
 
 Клиент запустится на http://localhost:8080
 
@@ -31,12 +31,12 @@ docker-compose up -d
     Клиент: http://localhost:8080
 
 🔑 Ключевые слова для поиска
-Ключевое слово	Что ищет
-javascript	Документация JavaScript (MDN, Learn JavaScript, JavaScript.info)
-nodejs	Документация Node.js, Express, NestJS
-react	Документация React, Redux, Next.js
-docker	Документация Docker, Docker Hub
-python	Документация Python, Django, Flask
+Ключевое слово;
+javascript;
+nodejs;
+react;
+docker;
+python;
 📖 Как использовать
 
     Введите ключевое слово (например, javascript) и нажмите "Найти"
