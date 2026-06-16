@@ -31,7 +31,6 @@ docker-compose up -d
     Клиент: http://localhost:8080
 
 🔑 Ключевые слова для поиска
-Ключевое слово;
 javascript;
 nodejs;
 react;
