@@ -1,0 +1,27 @@
+{
+  "javascript": [
+    "https://developer.mozilla.org/ru/docs/Web/JavaScript",
+    "https://learn.javascript.ru/",
+    "https://javascript.info/"
+  ],
+  "nodejs": [
+    "https://nodejs.org/en/about/",
+    "https://expressjs.com/",
+    "https://docs.nestjs.com/"
+  ],
+  "react": [
+    "https://react.dev/",
+    "https://redux.js.org/",
+    "https://nextjs.org/docs"
+  ],
+  "docker": [
+    "https://docs.docker.com/",
+    "https://hub.docker.com/",
+    "https://docker-curriculum.com/"
+  ],
+  "python": [
+    "https://www.python.org/doc/",
+    "https://docs.djangoproject.com/",
+    "https://flask.palletsprojects.com/"
+  ]
+}

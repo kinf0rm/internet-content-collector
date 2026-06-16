@@ -1,0 +1,11 @@
+{
+  "name": "content-collector-client",
+  "version": "1.0.0",
+  "description": "Client for content collection",
+  "scripts": {
+    "start": "serve -l 8080"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}

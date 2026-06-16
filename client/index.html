@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборщик контента из интернета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Сборщик контента из интернета</h1>
+            <p>Введите ключевое слово для поиска и скачивания контента</p>
+        </header>
+
+        <section class="search-section">
+            <div class="input-group">
+                <input type="text" id="keywordInput" placeholder="Введите ключевое слово..." />
+                <button id="searchBtn">🔍 Найти</button>
+            </div>
+            <div id="errorMessage" class="error-message hidden"></div>
+            <div id="loadingIndicator" class="loading hidden">Загрузка...</div>
+        </section>
+
+        <section class="urls-section" id="urlsSection" style="display: none;">
+            <h2>Найденные URL</h2>
+            <div id="urlsList" class="urls-list"></div>
+            <div id="downloadProgress" class="progress-container hidden">
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <div id="progressText" class="progress-text">Загрузка: 0%</div>
+            </div>
+        </section>
+
+        <section class="content-section" id="contentSection" style="display: none;">
+            <h2>Скачанный контент</h2>
+            <div id="contentDisplay" class="content-display"></div>
+            <button id="saveContentBtn" class="save-btn">💾 Сохранить в LocalStorage</button>
+        </section>
+
+        <section class="saved-section">
+            <h2>Сохраненный контент</h2>
+            <div id="savedList" class="saved-list"></div>
+            <div id="savedContent" class="saved-content"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

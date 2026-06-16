@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.search-section {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#keywordInput {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#keywordInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#searchBtn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#searchBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+#searchBtn:active {
+    transform: translateY(0);
+}
+
+#searchBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error-message {
+    background: #fee;
+    color: #c33;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #c33;
+    margin-top: 10px;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.urls-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.url-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s;
+}
+
+.url-item:hover {
+    border-color: #667eea;
+    background: #f0f2ff;
+}
+
+.url-item .url-text {
+    flex: 1;
+    color: #333;
+    word-break: break-all;
+    margin-right: 15px;
+}
+
+.url-item .download-btn {
+    padding: 8px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.url-item .download-btn:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+.url-item .download-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+.progress-container {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.progress-text {
+    margin-top: 8px;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.content-display {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 15px 0;
+    border: 2px solid #e9ecef;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.save-btn {
+    padding: 10px 25px;
+    background: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.save-btn:hover {
+    background: #e0a800;
+    transform: scale(1.05);
+}
+
+.saved-section {
+    margin-top: 30px;
+    border-top: 2px solid #e9ecef;
+    padding-top: 20px;
+}
+
+.saved-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.saved-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.saved-item {
+    padding: 8px 15px;
+    background: #e9ecef;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9em;
+}
+
+.saved-item:hover {
+    background: #667eea;
+    color: white;
+    transform: scale(1.05);
+}
+
+.saved-content {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid #e9ecef;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
