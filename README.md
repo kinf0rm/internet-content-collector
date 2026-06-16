@@ -6,19 +6,17 @@
 
 1. Запустите сервер:
 bash
-
-cd server
-npm install
-npm start
+    cd server
+    npm install
+    npm start
 
 Сервер запустится на http://localhost:3000
 
 2. Запустите клиент (в новом терминале):
 bash
-
-cd client
-npm install
-npm start
+    cd client
+    npm install
+    npm start
 
 Клиент запустится на http://localhost:8080
 
